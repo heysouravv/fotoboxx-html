@@ -1,0 +1,1952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FotoBoxx - Exhibition Stand Builder Dubai</title>
+    <!-- Preconnect to essential domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <!-- Critical CSS loaded first -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Non-critical CSS loaded asynchronously -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
+
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet"></noscript>
+
+    <!-- Preload critical font files -->
+    <link rel="preload" href="https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecg.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2" as="font" type="font/woff2" crossorigin>
+    <style>
+        :root {
+            --primary-color: #ffc107;
+            --secondary-color: #1a1a1a;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        /* Updated top bar styles */
+        .top-bar {
+            background: var(--secondary-color);
+            color: white;
+            padding: 12px 0; /* Increased padding */
+            font-size: 15px; /* Larger font */
+        }
+        
+        .top-bar i {
+            font-size: 20px; /* Larger icons */
+            margin-right: 10px;
+            color: white;
+            background-color: var(--primary-color);
+            padding: 7px;
+            border-radius: 100%;
+        }
+        
+        .top-bar a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .navbar-brand img {
+            height: 50px;
+        }
+        .navbar-nav .nav-link {
+            font-weight: 500;
+            font-size: 18px;
+        }
+
+        
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('asserts/3.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0; /* Reduced padding */
+        }
+        
+        .cta-button {
+            background: var(--primary-color);
+            color: var(--secondary-color);
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-block;
+            transition: all 0.3s;
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .cta-button-header {
+            background: var(--primary-color);
+            color: var(--secondary-color);
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-block;
+            transition: all 0.3s;
+            text-align: center;
+        }
+        
+        .cta-button-header:hover {
+            background: #ffca2c;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        
+        .portfolio-img {
+            height: 250px;
+            object-fit: cover;
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+        
+        .portfolio-img:hover {
+            transform: scale(1.05);
+        }
+        
+        .consultation-card {
+            border: none;
+            border-radius: 8px;
+            padding: 30px;
+            height: 100%;
+            transition: all 0.3s;
+            background: #f8f9fa;
+        }
+        
+        .consultation-card:hover {
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transform: translateY(-10px);
+        }
+        
+        .section-title {
+            color: var(--primary-color);
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(0,0,0,0.1);
+        }
+
+        .contact-form .form-control {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 30px;
+        }
+
+        .contact-form textarea.form-control {
+            height: 120px;
+            border-radius: 20px;
+        }
+
+        .contact-form h3 {
+            color: var(--secondary-color);
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+
+        .required-field {
+            color: #dc3545;
+        }
+
+        .navbar-nav .nav-link {
+            position: relative;
+            padding: 10px 15px;
+        }
+
+        .navbar-nav .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: var(--primary-color);
+            bottom: 0;
+            left: 50%;
+            transition: all 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover::after {
+            width: 100%;
+            left: 0;
+        }
+
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            background: var(--primary-color);
+            color: var(--secondary-color);
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        .scroll-to-top:hover {
+            background: #ffca2c;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 50%; /* Reduced height */
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            margin: 20px 0;
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                text-align: center;
+            }
+            .contact-form {
+                margin-top: 30px;
+            }
+            .top-bar i {
+                font-size: 12px; /* Larger icons */
+            }
+        }
+        .features-section {
+            background-color: #111827;
+            padding: 32px 0;
+        }
+
+        .features-title {
+            color: var(--primary-color);
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .features-heading {
+            color: white;
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 32px;
+            font-weight: 600;
+        }
+
+        .feature-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            height: 100%;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .feature-icon {
+            font-size: 24px;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .feature-number {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--primary-color);
+            opacity: 0.3;
+        }
+
+        .feature-card h4 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            font-weight: 600;
+            color: #111827;
+        }
+
+        .feature-card p {
+            color: #6B7280;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        .view-all-btn {
+            background: var(--primary-color);
+            color: #111827;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+            display: inline-block;
+            margin-top: 40px;
+        }
+
+        .view-all-btn:hover {
+            background: #ffca2c;
+            transform: translateY(-2px);
+            color: #111827;
+        }
+        .testimonials-section {
+            padding: 48px 0;
+            background: #fff;
+        }
+
+        .testimonial-heading {
+            text-align: center;
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 50px;
+        }
+
+        .testimonial-card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            height: 100%;
+            border: 1px solid #e0e0e0;
+            transition: all 0.3s;
+        }
+
+        .testimonial-card:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transform: translateY(-5px);
+        }
+
+        .google-logo {
+            height: 24px;
+            margin-bottom: 15px;
+        }
+
+        .star-rating {
+            color: #FFC107;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .review-text {
+            color: #333;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            min-height: 100px;
+        }
+
+        .reviewer-profile {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .reviewer-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .reviewer-info h5 {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .reviewer-company {
+            color: #666;
+            font-size: 12px;
+            margin: 0;
+        }
+        .clients-section {
+            background-color: #111827;
+            padding: 40px 0;
+            overflow: hidden;
+        }
+
+        .clients-title {
+            color: var(--primary-color);
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .clients-heading {
+            color: white;
+            text-align: center;
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 50px;
+        }
+
+        .logos-container {
+            position: relative;
+            overflow: hidden;
+            padding: 20px 0;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        .logos-slide {
+            display: flex;
+            animation: scroll 30s linear infinite;
+            gap: 40px;
+        }
+
+        .client-logo {
+            height: 50px;
+            min-width: 150px; /* Ensure logos don't shrink */
+            object-fit: contain;
+            filter: brightness(0) invert(1);
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+
+        .client-logo:hover {
+            opacity: 1;
+        }
+
+        /* Create the scrolling animation */
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(calc(-150px * 8 - 40px * 8)); /* Logo width + gap × number of logos */
+            }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .client-logo {
+                height: 40px;
+                min-width: 120px;
+            }
+
+            @keyframes scroll {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(calc(-120px * 8 - 40px * 8));
+                }
+            }
+        }
+        /* FAQ Section Styles */
+        .faq-section {
+            padding: 32px 0;
+            background: #fff;
+        }
+
+        .faq-title {
+            color: var(--primary-color);
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: var(--primary-color);
+            color: #111827;
+        }
+
+        .accordion-button:focus {
+            box-shadow: none;
+            border-color: rgba(0,0,0,.125);
+        }
+
+        .accordion-button::after {
+            background-size: 16px;
+        }
+
+        .faq-img {
+            border-radius: 10px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        /* Pre-footer Contact Section Styles */
+        .pre-footer {
+            background-color: #111827;
+            padding: 60px 0;
+            color: white;
+        }
+        
+        .pre-footer h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #ffc107;
+            margin-bottom: 20px;
+        }
+        
+        .pre-footer h2 span {
+            color: var(--primary-color);
+        }
+        
+        .pre-footer p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(0,0,0,0.1);
+        }
+
+        .contact-info {
+            padding: 20px;
+        }
+
+        .contact-info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            color: #111827;
+        }
+        @media (max-width: 991px) {
+            /* Typography adjustments */
+            h1.display-4 {
+                font-size: 2.5rem;
+            }
+            .col-lg-6.align-items-center {
+                padding-top: 20px;
+            }
+            
+            h2 {
+                font-size: 2rem;
+            }
+            
+            /* Navbar fixes */
+            .navbar-nav {
+                padding: 15px 0;
+            }
+            
+            .navbar-nav .cta-button .cta-button-header{
+                margin: 10px 0;
+                display: inline-block;
+                text-align: center;
+            }
+            .cta-button {
+                margin-top: 20px;
+            }
+            
+            /* Hero section adjustments */
+            .hero-section {
+                padding: 60px 0;
+                text-align: center;
+            }
+            
+            .hero-section .contact-form {
+                margin-top: 30px;
+            }
+            
+            /* Services cards adjustment */
+            .feature-card {
+                height: auto;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            /* Top bar responsiveness */
+            .top-bar {
+                text-align: center;
+            }
+            .col-lg-6.align-items-center {
+                padding-top: 20px;
+            }
+            
+            .top-bar .text-end {
+                text-align: center !important;
+                margin-top: 5px;
+            }
+            
+            /* Form adjustments */
+            .contact-form {
+                padding: 25px;
+            }
+            
+            /* Portfolio images */
+            .portfolio-img {
+                height: 200px;
+            }
+            
+            /* Testimonial cards */
+            .testimonial-card {
+                margin-bottom: 20px;
+            }
+            
+            .review-text {
+                min-height: auto;
+            }
+            
+            /* Client logos */
+            .client-logo {
+                max-width: 120px;
+            }
+            
+            /* FAQ section */
+            .faq-img {
+                margin-top: 30px;
+            }
+            
+            /* Pre-footer */
+            .contact-info {
+                margin-top: 30px;
+                text-align: center;
+            }
+            
+            .contact-info-item {
+                justify-content: center;
+            }
+            .cta-button {
+                margin-top: 20px;
+            }
+
+        }
+
+        @media (max-width: 576px) {
+            /* Smaller screen specific adjustments */
+            .container {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            .col-lg-6.align-items-center {
+                padding-top: 20px;
+            }
+            
+            
+            /* Button adjustments */
+            .cta-button {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+            
+            /* Form adjustments */
+            .form-control {
+                font-size: 14px;
+            }
+            
+            /* Feature cards */
+            .feature-number {
+                font-size: 20px;
+            }
+            
+            .feature-card h4 {
+                font-size: 18px;
+            }
+            
+            /* Footer */
+            footer {
+                text-align: center;
+            }
+            
+            footer .col-md-4 {
+                margin-bottom: 30px;
+            }
+
+            .video-container{
+                padding-top: 20px
+            }
+            .cta-button {
+                margin-top: 20px;
+            }
+        }
+
+        /* Additional Fixes */
+        /* Ensure logos don't break layout */
+        .logos-container {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .logos-slide {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        /* Fix for navbar on mobile */
+        @media (max-width: 991px) {
+            .navbar-collapse {
+                background: white;
+                padding: 15px;
+                border-radius: 8px;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+                margin-top: 10px;
+            }
+            
+            .navbar-nav .nav-link {
+                padding: 10px 20px;
+                text-align: center;
+            }
+            
+            .navbar-nav .cta-button {
+                margin: 10px 20px;
+                width: calc(100% - 40px);
+            }
+        }
+
+        /* Fix for forms on mobile */
+        @media (max-width: 768px) {
+            .contact-form .form-control,
+            .contact-form textarea.form-control {
+                padding: 12px;
+                margin-bottom: 15px;
+            }
+            
+        }
+
+        /* Fix for client section on mobile */
+        @media (max-width: 576px) {
+            .clients-section {
+                padding: 40px 0;
+            }
+            
+            .clients-heading {
+                font-size: 24px;
+                margin-bottom: 30px;
+            }
+        }
+        .video-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+
+        .video-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 48.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        .key-points {
+            margin: 30px 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .key-point {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .point-icon {
+            width: 45px;
+            height: 45px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--secondary-color);
+            font-size: 20px;
+        }
+
+        .point-content h4 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .point-content p {
+            font-size: 14px;
+            color: #666;
+            margin: 0;
+        }
+
+        .counter {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+        @media (max-width: 768px) {
+            .key-points {
+                grid-template-columns: 1fr;
+            }
+            
+            .key-point {
+                text-align: left;
+            }
+        }
+
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .video-card {
+                margin-bottom: 30px;
+            }
+        }
+
+        .reviewer-profile {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .reviewer-headshot {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .reviewer-info h5 {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .reviewer-company {
+            color: #666;
+            font-size: 12px;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .testimonial-card {
+                margin-bottom: 20px;
+            }
+            
+            .reviewer-headshot {
+                width: 50px;
+                height: 50px;
+            }
+        }
+        .feature-icon-small {
+            width: 30px;
+            height: 30px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #111827;
+        }
+
+        .feature-icon-small i {
+            font-size: 14px;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(0,0,0,0.1);
+        }
+
+        @media (max-width: 991px) {
+            .pre-footer {
+                padding: 40px 0;
+            }
+            
+            .contact-form {
+                margin-top: 40px;
+            }
+        }
+
+        .form-label {
+            color: #111827;
+        }
+        /* Styles for Method 2 */
+        .lazy-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            border-radius: 8px;
+        }
+        @media (max-width: 991px) {
+        .video-container {
+            max-width: 600px;
+            margin: 0 auto;
+            }   
+        }
+        /* WhatsApp Button Styles */
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .whatsapp-button a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            background-color: #25D366;
+            border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-button i {
+            font-size: 32px;
+            color: white;
+        }
+
+        .whatsapp-button a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+            background-color: #22c55e;
+        }
+
+        /* Tooltip Styles */
+        .whatsapp-tooltip {
+            position: absolute;
+            right: 75px;
+            bottom: 5px;
+            background: white;
+            padding: 10px 15px;
+            border-radius: 8px;
+            font-size: 14px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            color: #333;
+            width: 200px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-tooltip::after {
+            content: '';
+            position: absolute;
+            right: -8px;
+            top: 50%;
+            transform: translateY(-50%);
+            border-left: 8px solid white;
+            border-top: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+        }
+
+        /* Show tooltip on hover */
+        .whatsapp-button:hover .whatsapp-tooltip {
+            opacity: 1;
+            visibility: visible;
+            right: 85px;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .whatsapp-button {
+                bottom: 15px;
+                right: 15px;
+            }
+            
+            .whatsapp-button a {
+                width: 50px;
+                height: 50px;
+            }
+            
+            .whatsapp-button i {
+                font-size: 28px;
+            }
+            
+            .whatsapp-tooltip {
+                display: none;
+            }
+        }
+        /* Call Button Styles */
+    .call-button {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        z-index: 1000;
+    }
+
+    .call-button a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        background-color: var(--primary-color);
+        border-radius: 50%;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+    }
+
+    .call-button i {
+        font-size: 28px;
+        color: white;
+        animation: shake 1.5s infinite;
+    }
+    .pulse{
+        color: rgba(13, 110, 253, 0);
+    }
+    .whatsapp-button a{
+        color: rgba(13, 110, 253, 0);
+    }
+
+    /* Pulsing animation */
+    .pulse::before, .pulse::after {
+        content: '';
+        position: absolute;
+        border: 1px solid var(--primary-color);
+        left: -20px;
+        right: -20px;
+        top: -20px;
+        bottom: -20px;
+        border-radius: 50%;
+        animation: pulse 1.5s linear infinite;
+        opacity: 0;
+    }
+
+    .pulse::after {
+        animation-delay: .5s;
+    }
+
+    /* Tooltip Styles */
+    .call-tooltip {
+        position: absolute;
+        left: 75px;
+        bottom: 5px;
+        background: white;
+        padding: 10px 15px;
+        border-radius: 8px;
+        font-size: 14px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        color: #333;
+        width: 200px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+    }
+
+    .call-tooltip::before {
+        content: '';
+        position: absolute;
+        left: -8px;
+        top: 50%;
+        transform: translateY(-50%);
+        border-right: 8px solid white;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+    }
+
+    /* Animations */
+    @keyframes pulse {
+        0% {
+            transform: scale(0.5);
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            transform: scale(1.2);
+            opacity: 0;
+        }
+    }
+
+    @keyframes shake {
+        0%, 100% {
+            transform: rotate(0deg);
+        }
+        10% {
+            transform: rotate(-10deg);
+        }
+        20% {
+            transform: rotate(10deg);
+        }
+        30% {
+            transform: rotate(0deg);
+        }
+    }
+
+    /* Show tooltip on hover */
+    .call-button:hover .call-tooltip {
+        opacity: 1;
+        visibility: visible;
+        left: 85px;
+    }
+
+    .call-button a:hover {
+        transform: scale(1.1);
+        background-color: var(--primary-color)
+    }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 768px) {
+        .call-button {
+            bottom: 15px;
+            left: 15px;
+        }
+        
+        .call-button a {
+            width: 50px;
+            height: 50px;
+        }
+        
+        .call-button i {
+            font-size: 24px;
+        }
+        
+        .call-tooltip {
+            display: none;
+        }
+    }
+    html {
+            scroll-behavior: smooth;
+        }
+        .scroll-margin {
+            scroll-margin-top: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <i class="fas fa-phone me-2"></i><a href="tell:+971503451276" >+971503451276</a>
+                    <i class="fas fa-envelope ms-3 me-2"></i> <a href="mailto:hello@fotoboxx.live" >hello@fotoboxx.live</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="asserts/logo-11.webp" alt="FotoBoxx Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="cta-button-header ms-3 scroll-to-form" href="#heroForm">Get Free Quote</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Form -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <h1 class="display-4 fw-bold mb-4">#1 Exhibition Stand Builder in Dubai</h1>
+                    <p class="lead mb-4">FotoBoxx Exhibition is your go-to solution for Innovative Booth Design & Construction in Dubai</p>
+                    <a class="cta-button scroll-to-form" href="#heroForm">GET FREE QUOTE</a>
+                </div>
+                <div class="col-lg-5">
+                    <div id="heroForm" class="contact-form">
+                        <h3>Get in touch with us</h3>
+                        <form id="contact-form">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" placeholder="John Doe" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Company Name</label>
+                                        <input type="text" class="form-control" placeholder="Your Company" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Phone Number</label>
+                                        <input type="tel" class="form-control" placeholder="+971 XX XXX XXXX" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" placeholder="email@example.com" required>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">Your Requirement?</label>
+                                        <textarea class="form-control" rows="3" placeholder="Tell us about your project..."></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="cta-button w-100">SUBMIT</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <div class="section-title">Premier Exhibition Partner in Dubai</div>
+                    <h2 class="mb-4">Why Choose FotoBoxx?</h2>
+                    <p class="mb-4">We are Dubai's Leading Exhibition Stand Builder's, we pride ourselves in not only building your booth but also building your story to your audience. Our team of experienced and passionate professionals specializes in designing and building custom exhibition booths for clients looking to showcase their products and services in the UAE.</p>
+                    
+                    <!-- Key Points Grid -->
+                    <div class="key-points">
+                        <div class="key-point">
+                            <div class="point-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="point-content">
+                                <h4>100 + Projects</h4>
+                                <p>Successfully Completed Projects</p>
+                            </div>
+                        </div>
+                        <div class="key-point">
+                            <div class="point-icon">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <div class="point-content">
+                                <h4>Latest Technology</h4>
+                                <p>Advanced Tools & Techniques</p>
+                            </div>
+                        </div>
+                        <div class="key-point">
+                            <div class="point-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="point-content">
+                                <h4>Expert Team</h4>
+                                <p>Skilled Consultation & Execution</p>
+                            </div>
+                        </div>
+                        <div class="key-point">
+                            <div class="point-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <div class="point-content">
+                                <h4>Innovative Designs</h4>
+                                <p>Creative & Unique Solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center text-lg-start">
+                        <a class="cta-button scroll-to-form" href="#heroForm">GET FREE QUOTE</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <div class="video-container mb-4">
+                        <iframe
+                            src="https://www.youtube.com/embed/_3TKIM5DnjU?rel=0"
+                            title="About FotoBoxx"
+                            loading="lazy"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-4 bg-light">
+        <div class="container">
+            <div class="section-title text-center">Our Work</div>
+            <h2 class="text-center mb-5">Recent Projects</h2>
+            
+            <!-- Portfolio Images -->
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <img src="asserts/1.webp" class="portfolio-img shadow" alt="Portfolio 1">
+                </div>
+                <div class="col-md-4">
+                    <img src="asserts/2.jpg" class="portfolio-img shadow" alt="Portfolio 2">
+                </div>
+                <div class="col-md-4">
+                    <img src="asserts/3.jpeg" class="portfolio-img shadow" alt="Portfolio 3">
+                </div>
+                <div class="col-md-4">
+                    <img src="asserts/4.jpeg" class="portfolio-img shadow" alt="Portfolio 4">
+                </div>
+                <div class="col-md-4">
+                    <img src="asserts/5.jpg" class="portfolio-img shadow" alt="Portfolio 5">
+                </div>
+                <div class="col-md-4">
+                    <img src="asserts/6.jpg" class="portfolio-img shadow" alt="Portfolio 6">
+                </div>
+            </div>
+            
+            <!-- Video Cards -->
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe 
+                                src="https://www.youtube.com/embed/3jBEoyodzWE"
+                                title="Project Overview"
+                                loading="lazy"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe 
+                                src="https://www.youtube.com/embed/3XuOrqefv2E"
+                                loading="lazy"
+                                title="Behind the Scenes"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <a class="cta-button scroll-to-form" href="#heroForm">Get a Free Quote</a>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section -->
+    <section class="features-section" id="services">
+        <div class="container">
+            <div class="features-title">Our Services</div>
+            <h2 class="features-heading">Custom Exhibition Booth in Dubai</h2>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="feature-number">01</div>
+                        <h4>Consultation</h4>
+                        <p>Free, No Obligation Consultation, Design & Quotation. Our experts provide detailed insights for your exhibition success.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-pencil-ruler"></i>
+                        </div>
+                        <div class="feature-number">02</div>
+                        <h4>Stand Design</h4>
+                        <p>A Design Team Producing Cutting Edge Concepts To Your Requirements. Innovative and creative solutions that stand out.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <div class="feature-number">03</div>
+                        <h4>Stand Build</h4>
+                        <p>High-Quality Material used for fabrication & production. Premium construction ensuring durability and visual impact.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="feature-number">04</div>
+                        <h4>Project Management</h4>
+                        <p>Hassle-Free On time Booth Completion with our 24/7 Available project managers. Ensuring smooth execution from start to finish.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-truck-loading"></i>
+                        </div>
+                        <div class="feature-number">05</div>
+                        <h4>Logistics & Warehousing</h4>
+                        <p>Be worry-free, we take care of logistics, dismantling, and warehousing. Complete post-event support and storage solutions.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <div class="feature-number">06</div>
+                        <h4>Exhibition Management</h4>
+                        <p>Comprehensive services including Event Catering, Photo & Videography, Event Rentals, Engagement Technologies, Robot Rental's, and Hostess services.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-1">
+                <a class="cta-button scroll-to-form" href="#heroForm">Get a Free Quote</a>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="testimonial-heading">Here's what our clients say</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <img src="asserts/google.svg" alt="Google" class="google-logo">
+                        <div class="star-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">We have been working with Fotoboxx since 2020 with all our exhibition booth, we participate in 10+ exhibitions in a year, never they have let us down. By now they fully understand our needs and expectations. Good job guys!</p>
+                        <div class="reviewer-profile">
+                            <img src="/asserts/cl-2.jpg" alt="Angela Rechdan" class="reviewer-headshot">
+                            <div class="reviewer-info">
+                                <h5>Ms. Angela Rechdan</h5>
+                                <p class="reviewer-company">Regional Event Manager - MEDICA GROUP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <img src="asserts/google.svg" alt="Google" class="google-logo">
+                        <div class="star-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">These guys are magicians. They executed our booth at Professional beauty 2022 in such a short notice that really surprised me. Fotoboxx also managed all our printing, video shoots and catering needs for the Expo. Hence, we awarded them our next project at Dubai Derma 2023.</p>
+                        <div class="reviewer-profile">
+                            <img src="/asserts/cl-1.jpg" alt="Mona Ardeleanu" class="reviewer-headshot">
+                            <div class="reviewer-info">
+                                <h5>Ms. Mona Ardeleanu</h5>
+                                <p class="reviewer-company">Operation Manager - Antibes Drug Store LLC</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <img src="asserts/google.svg" alt="Google" class="google-logo">
+                        <div class="star-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">We have had an amazing experience with FotoBoxx Exhibitions, they design and build amazing exhibition booths, we have been working with them for the last 2 years and they have always surpassed our expectations.</p>
+                        <div class="reviewer-profile">
+                            <img src="/asserts/cl-3.jpg" alt="Victoria Hale" class="reviewer-headshot">
+                            <div class="reviewer-info">
+                                <h5>Victoria Hale</h5>
+                                <p class="reviewer-company">Owner - Yellow Fairies</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="clients-section">
+        <div class="container">
+            <h2 class="clients-heading">OUR CLIENTS</h2>
+        </div>
+        
+        <div class="logos-container">
+            <div class="logos-slide">
+                <!-- Original logos -->
+                <img src="/asserts/client-1.webp" alt="Client 1" class="client-logo">
+                <img src="/asserts/client-2.webp" alt="Client 2" class="client-logo">
+                <img src="/asserts/client-3.webp" alt="Client 3" class="client-logo">
+                <img src="/asserts/client-4.webp" alt="Client 4" class="client-logo">
+                <img src="/asserts/client-5.webp" alt="Client 5" class="client-logo">
+                <img src="/asserts/client-6.webp" alt="Client 6" class="client-logo">
+                <img src="/asserts/client-7.webp" alt="Client 7" class="client-logo">
+                <!-- Duplicate logos for seamless loop -->
+                <img src="/asserts/client-1.webp" alt="Client 1" class="client-logo">
+                <img src="/asserts/client-2.webp" alt="Client 2" class="client-logo">
+                <img src="/asserts/client-3.webp" alt="Client 3" class="client-logo">
+                <img src="/asserts/client-4.webp" alt="Client 4" class="client-logo">
+                <img src="/asserts/client-5.webp" alt="Client 5" class="client-logo">
+                <img src="/asserts/client-6.webp" alt="Client 6" class="client-logo">
+                <img src="/asserts/client-7.webp" alt="Client 7" class="client-logo">
+            </div>
+        </div>
+    </section>
+    <section class="faq-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="mb-4">Frequently Asked Questions</h2>
+                    
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    What is the Cost of an exhibition booth?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    The cost depends on your exact requirements and can be provided by our team after consulting your needs & requirements. You can contact FotoBoxx, and our team will quickly send over a custom quote tailored to your business!
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Do you provide Booth Design Services?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, FotoBoxx's in-house creative design team can create innovative & captivating booth designs tailored to your brand's objectives and target audience, we will bring your ideas to life!
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    What are the other services you offer for the exhibition?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We offer anything related to the event/exhibition, such as catering, hostess and staffing, photo & videography, hotels & transfers, etc.
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="accordion-item mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    What type of exhibition booths do you specialize in?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    At FotoBoxx, we specialize in designing and manufacturing various exhibition booths, including custom-built, modular and portable options to suit diverse needs.
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="accordion-item mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    What makes your exhibition booths stand out from the rest?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    With over 20+ years of experience, FotoBoxx exhibition booths stand out due to a combination of innovative designs, seamless booth-customer interaction, the latest technology, high-quality materials, and attention to detail.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="asserts/5.jpg" alt="FotoBoxx Exhibition Booth" class="img-fluid faq-img">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pre-footer Contact Section -->
+    <section class="pre-footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="text-white mb-3">Stand out with our <span style="color: #ffc107;">Unique Exhibition Stand Design</span> & <span style="color: #ffc107;">Build Solutions!</span></h2>
+                    <p class="text-white mb-4">Contact Us Today for a FREE DESIGN for your Booth </p>
+                    
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-form">
+                        <h3>Get in touch with us</h3>
+                        <form id="contact-form">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" placeholder="John Doe" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Company Name</label>
+                                        <input type="text" class="form-control" placeholder="Your Company" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Phone Number</label>
+                                        <input type="tel" class="form-control" placeholder="+971 XX XXX XXXX" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" placeholder="email@example.com" required>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">Your Requirement?</label>
+                                        <textarea class="form-control" rows="3" placeholder="Tell us about your project..."></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="cta-button w-100">SUBMIT</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    
+        <style>
+        </style>
+    </section>
+
+    <footer class="bg-dark">
+        <div class="footer-content py-5">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <!-- Logo Section -->
+                    <div class="col-lg-4 text-center text-lg-start">
+                        <img src="asserts/logo-11.webp" alt="FotoBoxx Logo" class="footer-logo mb-4">
+                    </div>
+                    
+                    <!-- Contact Info -->
+                    <div class="col-lg-4">
+                        <div class="footer-contact">
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Dubai, United Arab Emirates</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+971503451276</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>hello@fotoboxx.live</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center py-3">
+                    <div class="col-md-6">
+                        <p class="copyright mb-0">© 2024 FotoBoxx. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="legal-links mb-0">
+                            <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="/terms-and-conditions.html">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <style>
+        footer {
+            background-color: #111827;
+        }
+    
+        .footer-logo {
+            height: 45px;
+            display: inline-block;
+        }
+    
+        .footer-contact {
+            color: rgba(255,255,255,0.8);
+        }
+    
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+        }
+    
+        .contact-item:hover {
+            color: #fff;
+            transform: translateX(5px);
+        }
+    
+        .contact-item i {
+            color: #ffc107;
+            width: 20px;
+            font-size: 18px;
+        }
+    
+        .contact-item span {
+            font-size: 15px;
+        }
+    
+        .footer-bottom {
+            background: rgba(0, 0, 0, 0.2);
+        }
+    
+        .copyright {
+            color: rgba(255,255,255,0.6);
+            font-size: 14px;
+        }
+    
+        .legal-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+        }
+    
+        .legal-links li a {
+            color: rgba(255,255,255,0.6);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+    
+        .legal-links li a:hover {
+            color: #ffc107;
+        }
+    
+        @media (max-width: 991px) {
+            .footer-content {
+                text-align: center;
+            }
+            
+            .footer-contact {
+                margin-top: 30px;
+            }
+            
+            .contact-item {
+                justify-content: center;
+            }
+        }
+    
+        @media (max-width: 767px) {
+            .copyright {
+                text-align: center;
+                margin-bottom: 10px;
+            }
+    
+            .legal-links {
+                justify-content: center;
+            }
+        }
+        </style>
+    </footer>
+    <div class="whatsapp-button">
+        <div class="whatsapp-tooltip">
+            Hi! Chat with us on WhatsApp for quick support 👋
+        </div>
+        <a href="https://wa.me/+971503451276" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+    <div class="call-button">
+        <div class="call-tooltip">
+            Call us now for a free consultation! ☎️
+        </div>
+        <a href="tel:+971503451276" class="pulse">
+            <i class="fas fa-phone"></i>
+        </a>
+    </div>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Add click handler for all elements with scroll-to-form class
+        document.querySelectorAll('.scroll-to-form').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                const formElement = document.getElementById('heroForm');
+                formElement.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Show/hide scroll-to-top button
+        window.addEventListener('scroll', function() {
+            var scrollToTop = document.querySelector('.scroll-to-top');
+            if (window.pageYOffset > 100) {
+                scrollToTop.style.display = 'block';
+            } else {
+                scrollToTop.style.display = 'none';
+            }
+        });
+
+        // Scroll to top functionality
+        document.querySelector('.scroll-to-top').addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Form submission handling
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Here you would typically send the form data to a server
+            alert('Thank you for your message. We will get back to you soon!');
+            this.reset();
+        });
+        // Method 2: Lazy Loading Implementation
+        document.addEventListener("DOMContentLoaded", function() {
+            const videos = document.querySelectorAll('.lazy-video');
+            videos.forEach(video => {
+                video.src = video.dataset.src;
+            });
+        });
+
+        // Intersection Observer for even better lazy loading
+        const observerOptions = {
+            root: null,
+            rootMargin: '50px',
+            threshold: 0
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const video = entry.target;
+                    if (video.dataset.src) {
+                        video.src = video.dataset.src;
+                        video.removeAttribute('data-src');
+                    }
+                    observer.unobserve(video);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.lazy-video').forEach(video => {
+            observer.observe(video);
+        });
+    </script>
+</body>
+</html>
